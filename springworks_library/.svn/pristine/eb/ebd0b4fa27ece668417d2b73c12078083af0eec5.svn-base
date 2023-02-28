@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/*:: 기본값 ::*/
+.section {height:100vh; width: 100%; overflow: hidden; background: lightsalmon;}
+.section.inner-scroll {overflow-y: scroll;}
+/*스크롤바*/
+.section.inner-scroll::-webkit-scrollbar {width: 5px;height: 5px;}
+.section.inner-scroll::-webkit-scrollbar-button {width: 0;height:0;}
+.section.inner-scroll::-webkit-scrollbar-track {background:#fff;}
+.section.inner-scroll::-webkit-scrollbar-thumb {background:#a2a2a2;}
+
+/*:: background ::*/
+.section:nth-child(2) {background: skyblue;}
+.section:nth-child(3) {background: mediumpurple;}
+
+/*:: pager ::*/
+.section-nav {position: fixed; right: 10px; top: 50%; transform: translateY(-50%); text-align: center; z-index: 10;}
+.section-nav li .pager {transition: all 0.3s; width: 10px; height: 10px; border-radius: 100%; border: 1px solid #fff; padding-top: 0; margin-top: 5px;}
+.section-nav li.active .pager {background: #fff; width: 14px; height: 14px;}
+.section-nav li:first-child .pager {margin-top: 0;}
+
+
+/*:: effect - fade ::*/
+.full-page.fade {position: relative; min-height:100vh;}
+.full-page.fade .section {position: absolute; width: 100%; left: 0; top: 0;}
+.full-page.fade .section.active {z-index: 1;}
+
+.footer {height: 300px; background: rgba(0,0,0,0.4);}

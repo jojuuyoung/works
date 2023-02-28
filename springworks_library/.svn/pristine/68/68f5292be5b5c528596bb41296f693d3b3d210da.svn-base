@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/css/common/common.css">
+    <link rel="stylesheet" href="/css/gnb/gnb.css">
+
+    <script src="/js/common/jquery-3.4.1.min.js"></script>
+    <script src="/js/layout.js"></script>
+    <script src="/js/gnb/gnb_left.js"></script>
+    <title>스프링웍스 라이브러리</title>
+</head>
+<body>
+<nav class="nav">
+    <div class="nav-wrap">
+        <h2>스프링웍스 라이브러리</h2>
+        <ul class="nav-list">
+            <li>
+                <a href="#lnk">메인 슬라이드</a>
+                <ul class="dep2">
+                    <li><a href="/html/slide/main_fade.html">페이드 슬라이드</a></li>
+                    <li><a href="/html/slide/main_swipe.html">좌우 슬라이드</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#lnk">서브 슬라이드</a>
+                <ul class="dep2">
+                    <li><a href="/html/slide/info_fade.html">페이드 슬라이드</a></li>
+                    <li><a href="/html/slide/info_swipe.html">좌우 슬라이드</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/html/slide/banner.html">배너 슬라이드</a>
+            </li>
+            <li>
+                <a href="#lnk">탭</a>
+                <ul class="dep2">
+                    <li><a href="/html/tab/page_tab.html">페이지 이동</a></li>
+                    <li><a href="/html/tab/show_hide_tab.html">show/hide</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#lnk">갤러리 게시판</a>
+                <ul class="dep2">
+                    <li><a href="/html/gallery.html">기본 갤러리</a></li>
+                    <li><a href="/html/gallery_nopost.html">게시글 없을때</a></li>
+                </ul>
+            </li>
+            <li class="active">
+                <a href="#lnk">GNB</a>
+                <ul class="dep2">
+                    <li><a href="/html/gnb/gnb_total.html">가로 GNB-type1</a></li>
+                    <li><a href="/html/gnb/gnb_each.html">가로 GNB-type2</a></li>
+                    <li><a href="/html/gnb/gnb_left.html">세로 GNB-type1</a></li>
+                    <li><a href="/html/gnb/gnb_left.html">세로 GNB-type2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/html/lnb/lnb_left.html">LNB</a>
+            </li>
+            <li>
+                <a href="/html/form/join.html">회원가입 폼</a>
+            </li>
+            <li>
+                <a href="/html/total_search.html">상세검색</a>
+            </li>
+            <li>
+                <a href="/html/faq.html">자주 묻는 질문</a>
+            </li>
+            <li>
+                <a href="#lnk">연혁</a>
+                <ul class="dep2">
+                    <li><a href="/html/history/history.html">가운데 정렬</a></li>
+                    <li><a href="/html/history/history_left.html">왼쪽 정렬</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/html/breadcrumb.html">브래드크럼</a>
+            </li>
+            <li>
+                <a href="#lnk">테이블</a>
+                <ul class="dep2">
+                    <li><a href="/html/table/table_default.html">게시판 테이블(기본)</a></li>
+                    <li><a href="/html/table/tbl02.html">테이블-tbl02</a></li>
+                    <li><a href="/html/table/min_width_table.html">테이블 스크롤</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/html/button_type.html">인터렉션 효과</a>
+            </li>
+            <li>
+                <a href="#lnk">달력</a>
+                <ul class="dep2">
+                    <li><a href="/html/calendar/main_calendar.html">메인 달력</a></li>
+                    <li><a href="/html/calendar/sub_calendar.html">서브 달력</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/html/scroll/scroll.html">커스텀 스크롤</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div class="header left">
+        <button type="button" class="btn-menu">메뉴</button>
+        <div class="inner-header">
+            <div class="header-wrap on">
+                <div class="top-header">
+                    <a href="#lnk">LOGO</a>
+                    <button type="button" class="btn-menu-close">메뉴닫기</button>
+                </div>
+                <div class="gnb-wrap">
+                    <ul class="gnb">
+                        <li>
+                            <a href="#lnk">레드벨벳</a>
+                            <div class="dep2">
+                                <ul>
+                                    <li><a href="#lnk">아이린</a></li>
+                                    <li><a href="#lnk">슬기</a></li>
+                                    <li><a href="#lnk">웬디</a></li>
+                                    <li><a href="#lnk">조이</a></li>
+                                    <li><a href="#lnk">예리</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#lnk">트와이스</a>
+                            <div class="dep2">
+                                <ul>
+                                    <li><a href="#lnk">나연</a></li>
+                                    <li><a href="#lnk">사나</a></li>
+                                    <li><a href="#lnk">미나</a></li>
+                                    <li><a href="#lnk">쯔위</a></li>
+                                    <li><a href="#lnk">지효</a></li>
+                                    <li><a href="#lnk">모모</a></li>
+                                    <li><a href="#lnk">정연</a></li>
+                                    <li><a href="#lnk">다현</a></li>
+                                    <li><a href="#lnk">채영</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#lnk">블랙핑크</a>
+                            <div class="dep2">
+                                <ul>
+                                    <li><a href="#lnk">제니</a></li>
+                                    <li><a href="#lnk">로제</a></li>
+                                    <li><a href="#lnk">지수</a></li>
+                                    <li><a href="#lnk">리사</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#lnk">이달의 소녀</a>
+                            <div class="dep2">
+                                <ul>
+                                    <li><a href="#lnk">이브</a></li>
+                                    <li><a href="#lnk">희진</a></li>
+                                    <li><a href="#lnk">고원</a></li>
+                                    <li><a href="#lnk">올리비아 혜</a></li>
+                                    <li><a href="#lnk">츄</a></li>
+                                    <li><a href="#lnk">최리</a></li>
+                                    <li><a href="#lnk">희진</a></li>
+                                    <li><a href="#lnk">현진</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

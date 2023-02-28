@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/*index gnb*/
+.header.left.index .btn-menu-close:before,
+.header.left.index .btn-menu-close:after {background:#000;}
+.header.left.index .btn-menu {position: absolute; top: 0; left: 0;}
+.header.left.index .gnb-wrap {width: 100%; overflow-y: auto;}
+
+@media only screen and (min-width: 1024px){
+    .header.left.index .btn-menu-close:before,
+    .header.left.index .btn-menu-close:after {background:#fff;}
+    .header.left.index .header-wrap {width:260px; border-right: 1px solid #fff;}
+    .header.left.index .header-wrap.on {left: 0;}
+    .header.left.index .top-header {padding: 0 30px; background: #6dba34;}
+    .header.left.index .top-header a {color: #fff;}
+    .header.left.index .gnb > li {text-align: left;}
+    .header.left.index .gnb > li > a {padding: 15px 30px;}
+    .header.left.index .gnb .dep2 > ul > li > a {padding: 10px 35px;}
+}
+
+/*left gnb*/
+.header.left .btn-menu {background: url('/img/mob_menu.png')no-repeat 50% 50%; text-indent: -9999px; width: 17px; height: 15px; background-size: 17px 15px; padding: 20px;}
+.header.left .btn-menu-close {text-indent: -9999px; position: relative; width: 20px; height: 20px;}
+.header.left .btn-menu-close:before,
+.header.left .btn-menu-close:after {background: #595959; position: absolute; content: ''; top: 0; left: 50%; transform: translateX(-50%); width: 2px; height: 100%;}
+.header.left .btn-menu-close:before {transform: rotate(45deg);}
+.header.left .btn-menu-close:after {transform: rotate(-45deg);}
+.header.left {transition: all .5s;}
+.header.left .header-wrap {width: 100%; position: fixed; top: 0; z-index: 100; right:100%; height: 100vh; display: none;}
+.header.left .top-header {display: flex; justify-content: space-between; padding: 20px 15px; background: #e0e0e0;}
+.header.left .gnb-wrap {height: calc(100% - 60px); background: #f9f9f9;}
+.header.left .gnb {position: relative;}
+.header.left .gnb > li.active > a {background: #333; color: #fff;}
+.header.left .gnb > li > a {display: block; width: 100%; padding: 20px 30px; background: #f9f9f9; transition: all .5s; box-sizing: border-box; border-bottom: 1px solid rgba(0,0,0,0.1);}
+.header.left .gnb > li > a:hover,
+.header.left .gnb > li > a:focus {background:#333; color: #fff;}
+.header.left .gnb .dep2 {background:#fff; border-bottom: 1px solid rgba(0,0,0,0.1); display: none;}
+.header.left .gnb .dep2 > ul > li > a {display: block; padding: 20px 50px; position: relative; box-sizing: border-box; transition: all .3s;}
+.header.left .gnb .dep2 > ul > li > a:before {position: absolute; content: ''; width: 4px; height: 4px; background: #525252; border-radius: 100%; left: 40px; top: 50%; transform: translateY(-50%);}
+.header.left .gnb .dep2 > ul > li > a:hover,
+.header.left .gnb .dep2 > ul > li > a:focus {background: #a1a1a1; color: #fff;}
+.header.left .gnb .dep2 > ul > li > a:hover:before {background:#fff;}
+
+@media only screen and (min-width: 1024px){
+    .header.left .inner-header {position: fixed; top:0; left: 0; background: #f9f9f9; overflow-y: auto; height: 100vh;}
+    .header.left .header-wrap {right: auto; left: -100%; position: inherit; transition: all .5s; background: none; width: 400px;}
+    .header.left .header-wrap.on {left: 260px; display: block;}
+    .header.left .btn-menu {display: none;}
+    .header.left .top-header {width: 100%; text-align: center; height: 65px; line-height: 65px; display: flex; justify-content: space-between; align-items: center; padding: 0 40px; background: skyblue;}
+    .header.left .gnb-wrap {width: 100%; overflow-y: auto;}
+    .header.left .gnb {width: 100%;}
+    .header.left .gnb > li {text-align: center;}
+    .header.left .gnb > li.active a {width: 100%;}
+    .header.left .gnb > li > a {border-bottom: 0; padding: 22px 30px;}
+    .header.left .gnb .dep2 > ul {width: 100%;}
+    .header.left .gnb .dep2 > ul > li > a {padding: 10px 50px;}
+    .header.left .gnb .dep2 > ul > li > a:before {display: none;}
+}
+
+/*each gnb*/
+.header.each .btn-menu {background: url('/img/mob_menu.png')no-repeat 50% 50%; text-indent: -9999px; width: 17px; height: 15px; background-size: 17px 15px; padding: 20px;}
+.header.each .btn-menu-close {text-indent: -9999px; position: relative; width: 20px; height: 20px;}
+.header.each .btn-menu-close:before,
+.header.each .btn-menu-close:after {background: #595959; position: absolute; content: ''; top: 0; left: 50%; transform: translateX(-50%); width: 2px; height: 100%;}
+.header.each .btn-menu-close:before {transform: rotate(45deg);}
+.header.each .btn-menu-close:after {transform: rotate(-45deg);}
+
+.header.each .header-wrap {display: none; height: 100vh; background: #f1f1f1; position: fixed; top: 0; right: 100%; width: 100%;}
+.header.each .top-header {display: flex; justify-content: space-between; padding: 5px 12px; background: #fff;}
+.header.each .gnb {position: relative;}
+.header.each .gnb > li > a {display: block; width: 100%; padding: 10px 12px; transition: all 0.3s;}
+.header.each .gnb > li.active > a {color: #fff; background: #959595;}
+.header.each .gnb > li > .dep2 {position: absolute; width: 50%; left: 100%; top: 0; padding: 0 12px; background: #ccc; height: 100vh; opacity: 0;}
+.header.each .gnb > li.active > a {width: 50%;}
+.header.each .gnb > li > .dep2 li > a {display: block; padding: 10px 0;}
+.header.each .dep2.off {left: 100% !important; opacity: 0 !important;}
+.header.each .dep2.on {left: 50% !important; opacity: 1 !important; transition: all 0.3s;}
+@media screen and (min-width: 768px) {
+    .header.each .btn-menu,
+    .header.each .btn-menu-close {display: block;}
+}
+@media screen and (min-width: 1024px) {
+    .header.each .btn-menu,
+    .header.each .btn-menu-close {display: none;}
+    .header.each .inner-header {background: #f1f1f1;}
+    .header.each .header-wrap {display: block; height: 65px; position: inherit; margin: 0 auto; max-width: 1200px; overflow: hidden; transition: all 0.3s;}
+    .header.each .header-wrap.on {height: 390px;}
+    .header.each .top-header,
+    .header.each .gnb-wrap {float: left;}
+    .header.each .top-header {width: 80px; background: none; padding: 22px 12px;}
+    .header.each .gnb-wrap {width: calc(100% - 80px);}
+    .header.each .gnb {display: flex;}
+    .header.each .gnb > li {width: 25%; text-align: center;}
+    .header.each .gnb > li > a {padding: 22px 12px;}
+    .header.each .gnb > li.active > a {width: 100%;}
+    .header.each .gnb > li > .dep2 {height: 390px; opacity: 1; top: 65px; width: 100%; left: 0; display: none; padding: 0 100px;}
+    .header.each .gnb > li > .dep2 > ul {overflow: hidden;}
+    .header.each .gnb > li > .dep2 > ul > li {float: left; width: 50%;}
+    .header.each .gnb > li > .dep2 li > a {padding: 22px 0;}
+    .header.each .gnb > li > .dep2 li > a:hover,
+    .header.each .gnb > li > .dep2 li > a:focus {background: #abc; color: #fff;}
+}
+
+/*total gnb*/
+.header.total .btn-menu {background: url('/img/mob_menu.png')no-repeat 50% 50%; text-indent: -9999px; width: 17px; height: 15px; background-size: 17px 15px; padding: 20px;}
+.header.total .btn-menu-close {text-indent: -9999px; position: relative; width: 20px; height: 20px;}
+.header.total .btn-menu-close:before,
+.header.total .btn-menu-close:after {background: #595959; position: absolute; content: ''; top: 0; left: 50%; transform: translateX(-50%); width: 2px; height: 100%;}
+.header.total .btn-menu-close:before {transform: rotate(45deg);}
+.header.total .btn-menu-close:after {transform: rotate(-45deg);}
+
+.header.total .header-wrap {display: none; width: 100%; position: fixed; right: 100%; top: 0; height: 100vh;}
+.header.total .top-header {display: flex; justify-content: space-between; padding: 10px 12px;}
+.header.total .gnb-wrap {background: #f1f1f1; height: 100%;}
+.header.total .gnb > li > a {display: block; padding: 15px 12px; color: #000; border-bottom: 1px dashed #ccc; transition: all .3s;}
+.header.total .gnb > li.active > a,
+.header.total .gnb > li > a:hover,
+.header.total .gnb > li > a:focus {font-weight: bold; background: #959595; color: #fff;}
+.header.total .gnb > li.active > a { border: none; }
+.header.total .gnb > li > .dep2 {display: none; background: #fff; padding: 5px 30px;}
+.header.total .gnb > li > .dep2 > ul > li > a {position: relative; padding: 5px 0; display: block;}
+.header.total .gnb > li > .dep2 > ul > li > a:before {position: absolute; content: ''; left: -8px; top: 14px; width:3px; height: 3px; background: #1a252f;}
+
+@media screen and (min-width: 768px) {
+    .header.total .btn-menu, .btn-menu-close {display: block;}
+}
+@media screen and (min-width: 1024px) {
+    .header.total .btn-menu,
+    .header.total .btn-menu-close {display: none;}
+    .header.total .inner-header {background: #f1f1f1;}
+    .header.total .header-wrap {transition: all .3s; position: inherit; display: block; width: 100%; overflow: hidden; max-width:1200px; margin: 0 auto; height: 65px;}
+    .header.total .header-wrap.on {height: 434px;}
+    .header.total .top-header, .header.total .gnb-wrap {float: left;}
+    .header.total .top-header {width: 80px; padding: 22px 12px;}
+    .header.total .gnb-wrap { width: calc(100% - 80px); }
+    .header.total .gnb { display: flex;}
+    .header.total .gnb > li {width: 25%; text-align: center;}
+    .header.total .gnb > li > a {border-bottom: 0; padding: 22px 12px;}
+    .header.total .gnb > li > .dep2 {display: block; background: none; padding: 0;}
+    .header.total .gnb > li > .dep2 > ul > li > a {padding: 10px 0; display: block;}
+    .header.total .gnb > li > .dep2 > ul > li > a:hover, .header.total .gnb > li > .dep2 > ul > li > a:focus {background: #abc;}
+    .header.total .gnb > li > .dep2 > ul > li > a:before {display: none;}
+}
+
+/*nav*/
+.nav {width: 260px; position: fixed; left: 0; top: 0; height: 100%; background: #f3ffea; font-size: 16px; overflow-y: auto; padding-bottom: 20px;}
+.nav h2 {font-size: 18px; color: #fff; background: #6dba34; padding: 20px 30px;}
+.nav-list>li>a {padding: 15px 30px; display: block; color: #666; transition: all 0.3s;}
+.nav-list>li.active>a, .nav-list>li>a:hover {background: #fff237; color: #000;}
+.nav-list .dep2 {display: none; padding: 0 30px; font-size: 14px;}
+.nav-list .dep2>li {padding: 10px;}
+.nav-list .dep2>li>a:hover {text-decoration: underline;}
+.nav-list>li.active .dep2 {display: block; background: #fff3b7;}

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+.detail-wrap {padding: 30px 15px; background: #f1f2f3; display: none;}
+
+.header-logo-box {text-align: center;}
+.header-logo-box a {font-size: 24px;}
+
+.header-container ul {display: flex;}
+.header-container ul li:first-child {width: calc(100% - 80px);}
+.header-container ul li:first-child .search-box {height: 40px;}
+.header-container ul li:first-child .search-box input {width: 100%;}
+.header-container ul li:last-child {width: 80px; text-align: center;}
+.header-container ul li:last-child .detail-btn {background: #525252;}
+.header-container ul li:last-child a {display: inline-block; height: 40px; line-height: 40px; color: #fff;}
+
+.detail-con {margin-bottom: 15px;}
+.detail-con p {font-size: 14px; font-weight: bold; color: #000;}
+.detail-con .form-wrap {margin-top: 10px;}
+.search-word input[type="radio"] {margin:0 5px;}
+.search-word.date {margin-top: 5px;}
+.date-wrap {display: flex;}
+.datepicker-wrap {width: 50%;}
+
+.btn-wrap {text-align: center; margin-top: 30px;}
+.btn-wrap button {width: 80px; margin-left: 5px; height: 40px; line-height: 40px; background: #525252; color: #fff;}
+.btn-wrap button:first-child {margin-left: 0; background: skyblue;}
+
+/* daterpicker */
+.sdate, .edate {position: relative;}
+.sdate input[type="text"] , .edate input[type="text"] {width: 100%;}
+.edate {width:48%;}
+.datepicker-wrap img {position: absolute; right: 0px; width: 20px; top: 50%; transform: translateY(-50%); cursor: pointer; border-radius: 3px; margin: 0 10px;}
+.datepicker-wrap {background-color: #fff;}
+.datepicker-wrap.sche-ipt, .datepicker-wrap.disib {display: inline-block;}
+.datepicker-wrap.sche-ipt img {right: 5px;}
+
+@media all and (min-width:1024px) {
+    .header-container {display: flex; justify-content: space-between; align-items: center; padding: 10px;}
+    .header-logo-box {width: 300px;}
+    .header-container ul {width: calc(90% - 300px);}
+
+    .detail-top-wrap {max-width: 1200px; margin: 0 auto;}
+    .detail-con {display: flex; align-items: center;}
+    .detail-con p {width: 80px; display: inline-block;}
+    .detail-con .form-wrap {width: calc(100% - 65px); display: inline-block; margin-top: 0;}
+
+    .detail-bottom .form-wrap {display: flex; align-items: center;}
+}

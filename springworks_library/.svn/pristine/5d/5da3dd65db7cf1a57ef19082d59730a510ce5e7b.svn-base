@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+.history-box {transition: min-height 0.5s; position: relative; padding-left: 35px; margin-bottom: 10px; min-height: 100px;}
+.history-box.on {min-height: 100px;}
+.history-box.off {min-height: 45px;}
+.history-box:before {position: absolute; content: ''; height: 100%; width: 1px; background: darkkhaki; left: 9px; top: 25px;}
+.history-box:last-child:before {display: none;}
+.history-box .history-btn {position: absolute; text-indent: -9999px; width: 20px; height: 20px; border-radius: 100%; background: darkkhaki; left: 0; top: 15px;}
+.history-box .year {font-size: 30px; font-weight: bold; color: darkkhaki; cursor: pointer;}
+.history-box ul li {display: block;}
+.history-box ul li em {font-size: 18px; font-weight: bold; color: darkkhaki;}
+.history-box ul li span {padding-left: 10px;}
+
+@media screen and (min-width: 768px){
+    .history-box {display: flex;}
+    .history-box ul {padding-left: 30px; display: block; margin-top: 5px;}
+
+    /*양쪽 정렬*/
+    .history-box.left {margin-right: 50%; text-align: right; display: inline-block; width: 50%; padding-right: 40px; padding-left: 0;}
+    .history-box.left ul li {display: flex; align-items: center; flex-direction: row-reverse; flex: 1;}
+    .history-box.left ul li span {padding-left: 0; padding-right: 10px;}
+    .history-box.left:before {left: auto; right: 9px;}
+    .history-box.left .history-btn {right: 0; left: auto;}
+    .history-box.right {margin-left: 50%; text-align: left; display: inline-block; width: 50%; padding-left: 40px; left: -19px;}
+    .history-box.right ul {padding-left: 0;}
+}
+

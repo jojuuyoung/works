@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.title-top {display: flex; justify-content: space-between;}
+.sub-tit {font-size: 20px;}
+.breadcrumbs-list {display: flex;}
+.breadcrumbs-list > li {position: relative; padding-left: 20px;}
+.breadcrumbs-list > li > a {display: block; padding: 5px 35px 5px 10px; background: #f1f1f1; position: relative;}
+.breadcrumbs-list > li > a:before {top:12px; right: 10px; transform: rotate(135deg); position: absolute; content: ''; width: 5px; height: 5px; border-right: 1px solid #0f3661; border-top: 1px solid #0f3661;}
+.breadcrumbs-list > li.active > a:before {top:14px; right: 10px; transform: rotate(-45deg); position: absolute; content: ''; width: 5px; height: 5px; border-right: 1px solid #0f3661; border-top: 1px solid #0f3661;}
+.breadcrumbs-list > li .dep-list {display: none; text-align: center; border: 1px solid #ccc; border-top: none;}
+.breadcrumbs-list > li .dep-list > li > a {display: block; padding: 5px 0; border-bottom: 1px dashed #ccc; transition: all .3s;}
+.breadcrumbs-list > li .dep-list > li:hover > a {background: #f1f1f1;}
+.breadcrumbs-list > li .dep-list > li:last-child > a {border-bottom: 0;}
+.breadcrumbs-list > li > a.home:before { display: none;}
+.breadcrumbs-list > li > a.home {background: none; padding: 5px;}
+.breadcrumbs-list li img {vertical-align: middle;}
+.breadcrumbs-list > li:before {position: absolute; content: ''; top: 12px; right: -11px; width: 5px; height: 5px; border-top: 2px solid #ccc; border-right: 2px solid #ccc; transform: rotate(45deg);}
+.breadcrumbs-list > li:last-child:before {display: none;}

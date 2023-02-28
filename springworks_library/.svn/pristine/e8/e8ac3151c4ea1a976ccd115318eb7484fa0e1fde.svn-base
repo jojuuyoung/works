@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/css/common/common.css">
+    <link rel="stylesheet" href="/css/total_search.css">
+    <link rel="stylesheet" href="/css/gnb/gnb.css">
+    <link rel="stylesheet" href="/css/table/table.css">
+
+    <script src="/js/common/jquery-3.4.1.min.js"></script>
+    <script src="/js/layout.js"></script>
+    <script src="/js/total_search.js"></script>
+    <title>테이블 - 게시판 테이블(기본)</title>
+</head>
+<body>
+<nav class="nav">
+    <div class="nav-wrap">
+        <h2>스프링웍스 라이브러리</h2>
+        <ul class="nav-list">
+            <li>
+                <a href="#lnk">메인 슬라이드</a>
+                <ul class="dep2">
+                    <li><a href="/html/slide/main_fade.html">페이드 슬라이드</a></li>
+                    <li><a href="/html/slide/main_swipe.html">좌우 슬라이드</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#lnk">서브 슬라이드</a>
+                <ul class="dep2">
+                    <li><a href="/html/slide/info_fade.html">페이드 슬라이드</a></li>
+                    <li><a href="/html/slide/info_swipe.html">좌우 슬라이드</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/html/slide/banner.html">배너 슬라이드</a>
+            </li>
+            <li>
+                <a href="#lnk">탭</a>
+                <ul class="dep2">
+                    <li><a href="/html/tab/page_tab.html">페이지 이동</a></li>
+                    <li><a href="/html/tab/show_hide_tab.html">show/hide</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#lnk">갤러리 게시판</a>
+                <ul class="dep2">
+                    <li><a href="/html/gallery.html">기본 갤러리</a></li>
+                    <li><a href="/html/gallery_nopost.html">게시글 없을때</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#lnk">GNB</a>
+                <ul class="dep2">
+                    <li><a href="/html/gnb/gnb_total.html">가로 GNB-type1</a></li>
+                    <li><a href="/html/gnb/gnb_each.html">가로 GNB-type2</a></li>
+                    <li><a href="/html/gnb/gnb_left.html">세로 GNB-type1</a></li>
+                    <li><a href="/html/gnb/gnb_left.html">세로 GNB-type2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/html/lnb/lnb_left.html">LNB</a>
+            </li>
+            <li>
+                <a href="/html/form/join.html">회원가입 폼</a>
+            </li>
+            <li>
+                <a href="/html/total_search.html">상세검색</a>
+            </li>
+            <li>
+                <a href="/html/faq.html">자주 묻는 질문</a>
+            </li>
+            <li>
+                <a href="#lnk">연혁</a>
+                <ul class="dep2">
+                    <li><a href="/html/history/history.html">가운데 정렬</a></li>
+                    <li><a href="/html/history/history_left.html">왼쪽 정렬</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/html/breadcrumb.html">브래드크럼</a>
+            </li>
+            <li class="active">
+                <a href="#lnk">테이블</a>
+                <ul class="dep2">
+                    <li><a href="/html/table/table_default.html">게시판 테이블(기본)</a></li>
+                    <li><a href="/html/table/tbl02.html">테이블-tbl02</a></li>
+                    <li><a href="/html/table/min_width_table.html">테이블 스크롤</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/html/button_type.html">인터렉션 효과</a>
+            </li>
+            <li>
+                <a href="#lnk">달력</a>
+                <ul class="dep2">
+                    <li><a href="/html/calendar/main_calendar.html">메인 달력</a></li>
+                    <li><a href="/html/calendar/sub_calendar.html">서브 달력</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/html/scroll/scroll.html">커스텀 스크롤</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div class="con-wrap">
+        <div class="scroll tbl-scroll">
+            <table class="tbl mt100">
+                <caption class="blind">테이블에 대한 설명입니다. 순서대로 안내합니다.</caption>
+                <colgroup>
+                    <col style="width:8%">
+                    <col style="width:9%">
+                    <col style="width:11%">
+                    <col style="width:20%">
+                    <col style="width:24%">
+                    <col style="width:16%">
+                    <col style="width:12%">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th scope="col">연번</th>
+                    <th scope="col">지역</th>
+                    <th scope="col">유형</th>
+                    <th scope="col">단체명</th>
+                    <th scope="col">프로그램명</th>
+                    <th scope="col">장르</th>
+                    <th scope="col">지원금액</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>평창</td>
+                    <td>사랑방</td>
+                    <td>신은선</td>
+                    <td>보고쓰고 다시쓰는 가게</td>
+                    <td>미술</td>
+                    <td>10,000,000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>인제</td>
+                    <td>사랑방</td>
+                    <td>산책작은도서관</td>
+                    <td>에코시민문화학교</td>
+                    <td>연극, 영화, 생태 등</td>
+                    <td>10,000,000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>삼척</td>
+                    <td>사랑방</td>
+                    <td>수리수리 협동조합</td>
+                    <td>엄마들의 미술시간-수다를 떨며</td>
+                    <td>미술, 문학</td>
+                    <td>9,000,000</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>동해</td>
+                    <td>사랑방</td>
+                    <td>아트팩토리 반달</td>
+                    <td>창작집단 이룸 문화교실</td>
+                    <td>영화, 문학, 음악, 연극, 전통 등</td>
+                    <td>10,000,000</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>인제</td>
+                    <td>사랑방</td>
+                    <td>인제군 하남3리 마을회</td>
+                    <td>마을회관을 이용한 생활문화예술 사랑방 공간 창출</td>
+                    <td>공예</td>
+                    <td>10,000,000</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>인제</td>
+                    <td>사랑방</td>
+                    <td>작은도서관 숲으로</td>
+                    <td>인제설화 이야기</td>
+                    <td>역사</td>
+                    <td>10,000,000</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>평창</td>
+                    <td>사랑방</td>
+                    <td>평창 ARTCCC</td>
+                    <td>땀. 땀. 땀</td>
+                    <td>미술, 공예</td>
+                    <td>10,000,000</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>철원</td>
+                    <td>사랑방</td>
+                    <td>YMCA철원평화센터</td>
+                    <td>연극으로 웃음꽃 피는 어깨동무</td>
+                    <td>연극</td>
+                    <td>10,000,000</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>평창</td>
+                    <td>홍반장</td>
+                    <td>강지현</td>
+                    <td>대관령 포테이토 살롱</td>
+                    <td>미술, 무용</td>
+                    <td>8,000,000</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>속초</td>
+                    <td>홍반장</td>
+                    <td>박정근</td>
+                    <td>속초콜라보</td>
+                    <td>-</td>
+                    <td>7,000,000</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

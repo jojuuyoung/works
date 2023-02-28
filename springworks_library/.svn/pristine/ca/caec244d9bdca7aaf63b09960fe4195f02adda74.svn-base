@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body {background: #222;}
+.scroll-wrap {overflow: hidden; padding: 0 65px;}
+.scroll-wrap li {float: left; width: calc(33.333% - 50px); text-align: center; margin-right: 75px;}
+.scroll-wrap li:nth-child(3n) {margin-right: 0;}
+
+.cont, .only-css {background: rgba(0,0,0,0.3); color: #fff; margin-bottom: 20px; height: 500px;}
+.cont p, .only-css p {min-height: 100vh; padding-top: 30px; font-weight: bold; font-size: 30px;}
+
+.only-css {overflow-y: auto}
+/*스크롤바 커스텀 css 추가*/
+.only-css::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+.only-css::-webkit-scrollbar-button {
+    width: 0;
+    height:0;
+}
+.only-css::-webkit-scrollbar-track {
+    background:#fff;
+}
+.only-css::-webkit-scrollbar-thumb {
+    background:#a2a2a2;
+}
