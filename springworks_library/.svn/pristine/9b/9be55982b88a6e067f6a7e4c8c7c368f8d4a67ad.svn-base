@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="04efc1b1-0fd7-48e7-afc4-4b0b38caff03" name="springworks_library" url="http://localhost:9011">
+        <fileTransfer port="0" mountedRoot="D:\workplace\svn" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
